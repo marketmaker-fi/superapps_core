@@ -64,7 +64,7 @@ import Statusbar, {
   StatusbarWrapper,
 } from "pages/Editor/gitSync/components/Statusbar";
 import ScrollIndicator from "components/ads/ScrollIndicator";
-import DeployedKeyUI from "../components/DeployedKeyUI";
+import Keys from "../components/ssh-key";
 import GitConnectError from "../components/GitConnectError";
 import Link from "../components/Link";
 import TooltipComponent from "components/ads/Tooltip";
@@ -464,7 +464,14 @@ function GitConnection({ isImport }: Props) {
                 disabled={!remoteUrl || isInvalidRemoteUrl}
                 isLoading={generatingSSHKey || fetchingSSHKeyPair}
                 onClick={() => {
-                  generateSSHKey();
+                  generateSSHKey(
+                    remoteUrl
+                      .toString()
+                      .toLocaleLowerCase()
+                      .includes("azure")
+                      ? "RSA"
+                      : "ECDSA",
+                  );
                   AnalyticsUtil.logEvent("GS_GENERATE_KEY_BUTTON_CLICK");
                 }}
                 size={Size.large}
@@ -474,7 +481,7 @@ function GitConnection({ isImport }: Props) {
             </ButtonContainer>
           )
         ) : (
-          <DeployedKeyUI
+          <Keys
             SSHKeyPair={SSHKeyPair || ""}
             copyToClipboard={copyToClipboard}
             deployKeyDocUrl={deployKeyDocUrl}
