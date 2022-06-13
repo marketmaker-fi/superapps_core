@@ -1,13 +1,12 @@
 import React from "react";
-import { ConfirmMenuItem, FlexRow } from "./StyledComponents";
-import Text, { TextType } from "components/ads/Text";
+import { ConfirmMenuItem, ConfirmRegeneration } from "./StyledComponents";
 import {
   createMessage,
   DELETE_CONFIRMATION_MODAL_TITLE,
   REGENERATE_KEY_CONFIRM_MESSAGE,
   YES,
 } from "@appsmith/constants/messages";
-import Button, { Category, Size } from "components/ads/Button";
+import { Button, Category, Size, Text, TextType } from "components/ads";
 
 /**
  * getConfirmMenuItem
@@ -19,7 +18,7 @@ export function getConfirmMenuItem(regenerateKey: () => void) {
       <Text type={TextType.P3}>
         {createMessage(REGENERATE_KEY_CONFIRM_MESSAGE)}
       </Text>
-      <FlexRow style={{ marginTop: 16.5, justifyContent: "space-between" }}>
+      <ConfirmRegeneration>
         <Text type={TextType.P1}>
           {createMessage(DELETE_CONFIRMATION_MODAL_TITLE)}
         </Text>
@@ -29,7 +28,7 @@ export function getConfirmMenuItem(regenerateKey: () => void) {
           size={Size.xs}
           text={createMessage(YES)}
         />
-      </FlexRow>
+      </ConfirmRegeneration>
     </ConfirmMenuItem>
   );
 }

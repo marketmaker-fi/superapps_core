@@ -24,6 +24,11 @@ export const FlexRow = styled.div`
   width: 100%;
 `;
 
+export const ConfirmRegeneration = styled(FlexRow)`
+  margin-top: 16.5px;
+  justify-content: space-between;
+`;
+
 export const KeyType = styled.span<{ keyType: string }>`
   width: ${(props) => (props.keyType === "ECDSA" ? "30%" : "15%")};
   font-size: 10px;
@@ -76,5 +81,5 @@ export const RegenerateOptionsHeader = styled.div`
   padding: 0 14px;
   font-size: 16px;
   height: 38px;
-  width: calc(100%-30px);
+  width: calc(100% - 30px);
 `;

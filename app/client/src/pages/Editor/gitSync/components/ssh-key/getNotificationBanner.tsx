@@ -2,8 +2,9 @@ import { NotificationBannerContainer } from "./StyledComponents";
 import {
   NotificationBanner,
   NotificationVariant,
-} from "components/ads/NotificationBanner";
-import Text, { TextType } from "components/ads/Text";
+  Text,
+  TextType,
+} from "components/ads";
 import { Colors } from "constants/Colors";
 import {
   createMessage,
