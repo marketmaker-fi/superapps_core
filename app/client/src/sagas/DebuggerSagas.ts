@@ -313,6 +313,7 @@ function* logDebuggerErrorAnalyticsSaga(
         getJSCollection,
         payload.entityId,
       );
+      if (!action) return;
       const plugin: Plugin = yield select(getPlugin, action.pluginId);
       const pluginName = plugin?.name?.replace(/ /g, "");
 
