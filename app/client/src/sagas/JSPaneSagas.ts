@@ -340,6 +340,7 @@ export function* handleExecuteJSFunctionSaga(data: {
       executeFunction,
       collectionName,
       action,
+      collectionId,
     );
     yield put({
       type: ReduxActionTypes.EXECUTE_JS_FUNCTION_SUCCESS,
