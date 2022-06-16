@@ -51,7 +51,7 @@ export const LOGIN_PAGE_INVALID_CREDS_ERROR = () =>
   `It looks like you may have entered incorrect/invalid credentials. Please try again or reset password using the button below.`;
 export const LOGIN_PAGE_INVALID_CREDS_FORGOT_PASSWORD_LINK = () =>
   `Reset Password`;
-export const NEW_TO_APPSMITH = () => `New to Appsmith?`;
+export const NEW_TO_APPSMITH = () => `New to Superapps?`;
 
 export const LOGIN_PAGE_LOGIN_BUTTON_TEXT = () => `sign in`;
 export const LOGIN_PAGE_FORGOT_PASSWORD_TEXT = () => `Forgot Password`;
@@ -100,7 +100,7 @@ export const FORGOT_PASSWORD_PAGE_SUBTITLE = () =>
   `We will send a reset link to the email below`;
 export const FORGOT_PASSWORD_PAGE_SUBMIT_BUTTON_TEXT = () => `Reset`;
 export const FORGOT_PASSWORD_SUCCESS_TEXT = (email: string) =>
-  `A password reset link has been sent to your email address ${email} registered with Appsmith.`;
+  `A password reset link has been sent to your email address ${email} registered with Superapps.`;
 
 export const PRIVACY_POLICY_LINK = () => `Privacy policy`;
 export const TERMS_AND_CONDITIONS_LINK = () => `Terms and conditions`;
@@ -220,7 +220,7 @@ export const GOOGLE_RECAPTCHA_DOMAIN_ERROR = () =>
   `Google Re-Captcha token generation failed! Please check the allowed domains.`;
 
 export const SERVER_API_TIMEOUT_ERROR = () =>
-  `Appsmith server is taking too long to respond. Please try again after some time`;
+  `Superapps server is taking too long to respond. Please try again after some time`;
 export const DEFAULT_ERROR_MESSAGE = () => `There was an unexpected error`;
 export const REMOVE_FILE_TOOL_TIP = () => "Remove Upload";
 export const ERROR_FILE_TOO_LARGE = (fileSize: string) =>
@@ -307,14 +307,14 @@ export const OAUTH_AUTHORIZATION_FAILED =
   "Authorization failed. Please check your details or try again.";
 // Todo: improve this for appsmith_error error message
 export const OAUTH_AUTHORIZATION_APPSMITH_ERROR = "Something went wrong.";
-export const OAUTH_APPSMITH_TOKEN_NOT_FOUND = "Appsmith token not found";
+export const OAUTH_APPSMITH_TOKEN_NOT_FOUND = "Superapps token not found";
 
 export const LOCAL_STORAGE_QUOTA_EXCEEDED_MESSAGE = () =>
   "Error saving a key in localStorage. You have exceeded the allowed storage size limit";
 export const LOCAL_STORAGE_NO_SPACE_LEFT_ON_DEVICE_MESSAGE = () =>
   "Error saving a key in localStorage. You have run out of disk space";
 export const LOCAL_STORAGE_NOT_SUPPORTED_APP_MIGHT_NOT_WORK_AS_EXPECTED = () =>
-  "Localstorage storage is not supported on your device. Some features including the Appsmith store won't work.";
+  "Localstorage storage is not supported on your device. Some features including the Superapps store won't work.";
 
 export const OMNIBAR_PLACEHOLDER = () =>
   `Search Widgets, Queries, Documentation`;
@@ -398,7 +398,7 @@ export const EMPTY_JS_RESPONSE_LAST_HALF = () =>
   "to view response of selected function";
 export const INVALID_EMAIL = () => "Please enter a valid email";
 export const DEBUGGER_INTERCOM_TEXT = (text: string) =>
-  `Hi, \nI'm facing the following error on Appsmith, can you please help? \n\n${text}`;
+  `Hi, \nI'm facing the following error on Superapps, can you please help? \n\n${text}`;
 export const DEBUGGER_TRIGGER_ERROR = (propertyName: string) =>
   `Error occurred while evaluating trigger ${propertyName}`;
 
@@ -407,7 +407,7 @@ export const DEBUGGER_SEARCH_GOOGLE = () => "Ask Google";
 export const DEBUGGER_COPY_MESSAGE = () => "Copy";
 export const DEBUGGER_OPEN_DOCUMENTATION = () => "Open documentation";
 export const DEBUGGER_SEARCH_SNIPPET = () => "Browse code snippets";
-export const DEBUGGER_APPSMITH_SUPPORT = () => "Get Appsmith support";
+export const DEBUGGER_APPSMITH_SUPPORT = () => "Get Superapps support";
 
 //action creator menu
 export const NO_ACTION = () => `No action`;
@@ -768,9 +768,9 @@ export const CHANGES_ONLY_USER = () => "Changes since last commit";
 export const CHANGES_MADE_SINCE_LAST_COMMIT = () =>
   "Changes made since last commit";
 export const CHANGES_ONLY_MIGRATION = () =>
-  "Appsmith update changes since last commit";
+  "Superapps update changes since last commit";
 export const CHANGES_USER_AND_MIGRATION = () =>
-  "Appsmith update and user changes since last commit";
+  "Superapps update and user changes since last commit";
 // GIT DEPLOY end
 
 // GIT DELETE BRANCH begin
@@ -799,7 +799,7 @@ export const ERROR_GIT_INVALID_REMOTE = () =>
 export const SNIPPET_DESCRIPTION = () =>
   `Search and insert code snippets to perform complex actions quickly.`;
 export const DOC_DESCRIPTION = () =>
-  `Find answers through Appsmith documentation.`;
+  `Find answers through Superapps documentation.`;
 export const NAV_DESCRIPTION = () =>
   `Navigate to any page, widget or file across this project.`;
 export const ACTION_OPERATION_DESCRIPTION = () =>
@@ -838,14 +838,14 @@ export enum ONBOARDING_CHECKLIST_ACTIONS {
 }
 
 export const ONBOARDING_CHECKLIST_BANNER_HEADER = () =>
-  "Amazing work! You’ve explored the basics of Appsmith";
+  "Amazing work! You’ve explored the basics of Superapps";
 export const ONBOARDING_CHECKLIST_BANNER_BODY = () =>
   "You can carry on here, or explore the homepage to see how your projects are stored.";
 export const ONBOARDING_CHECKLIST_BANNER_BUTTON = () => "Explore homepage";
 
-export const ONBOARDING_CHECKLIST_HEADER = () => "👋 Welcome to Appsmith!";
+export const ONBOARDING_CHECKLIST_HEADER = () => "👋 Welcome to Superapps!";
 export const ONBOARDING_CHECKLIST_BODY = () =>
-  "Let’s get you started on your first application, explore Appsmith yourself or follow our guide below to discover what Appsmith can do.";
+  "Let’s get you started on your first application, explore Superapps yourself or follow our guide below to discover what Superapps can do.";
 export const ONBOARDING_CHECKLIST_COMPLETE_TEXT = () => "complete";
 
 export const ONBOARDING_CHECKLIST_CONNECT_DATA_SOURCE = {
@@ -878,7 +878,7 @@ export const ONBOARDING_CHECKLIST_FOOTER = () =>
 
 //Introduction modal
 export const HOW_APPSMITH_WORKS = () =>
-  "Here’s a quick overview of how Appsmith works. ";
+  "Here’s a quick overview of how Superapps works. ";
 export const ONBOARDING_INTRO_CONNECT_YOUR_DATABASE = () =>
   "Connect to your database or APIs";
 export const DRAG_AND_DROP = () =>
@@ -893,9 +893,9 @@ export const BUILD_MY_FIRST_APP = () => "Build on my own";
 export const ONBOARDING_INTRO_FOOTER = () =>
   "Let’s start building your first application";
 export const START_TUTORIAL = () => "START TUTORIAL";
-export const WELCOME_TO_APPSMITH = () => "Welcome to Appsmith!";
+export const WELCOME_TO_APPSMITH = () => "Welcome to Superapps!";
 export const QUERY_YOUR_DATABASE = () =>
-  "Query your own database or API inside Appsmith. Write JS to construct dynamic queries.";
+  "Query your own database or API inside Superapps. Write JS to construct dynamic queries.";
 
 //Statusbar
 export const ONBOARDING_STATUS_STEPS_FIRST = () => "First: Add a datasource";
@@ -971,7 +971,7 @@ export const WELCOME_FORM_DATA_COLLECTION_BODY = () =>
   "Share anonymous usage data to help improve the product.";
 export const WELCOME_FORM_DATA_COLLECTION_LINK = () => "See what is shared";
 export const WELCOME_FORM_DATA_COLLECTION_LABEL_ENABLE = () =>
-  "Share data & make Appsmith better!";
+  "Share data & make Superapps better!";
 export const WELCOME_FORM_DATA_COLLECTION_LABEL_DISABLE = () =>
   "Don't share any data";
 export const WELCOME_FORM_NEWLETTER_HEADER = () => "Stay in touch";
@@ -993,7 +993,7 @@ export const LAYOUT_DROPDOWN_TOOLTIP = () =>
   "Choose how your application looks on desktop, tablet and mobile devices";
 export const DEPLOY_BUTTON_TOOLTIP = () =>
   "Deploy the current version of the application";
-export const SHARE_BUTTON_TOOLTIP = () => "Invite your team to Appsmith";
+export const SHARE_BUTTON_TOOLTIP = () => "Invite your team to Superapps";
 export const SHARE_BUTTON_TOOLTIP_WITH_USER = (length: number) => () =>
   `Shared with ${length} other`;
 export const DEBUGGER_TOOLTIP = () => "Open Debugger";
@@ -1024,7 +1024,7 @@ export const RESTART_ERROR_BODY = () =>
 export const RESTART_ERROR_HEADER = () => "Restarting failed";
 export const RETRY_BUTTON = () => "Retry";
 export const INFO_VERSION_MISMATCH_FOUND_RELOAD_REQUEST = () =>
-  "Hey! There is a new version of Appsmith available. Please consider refreshing your window.";
+  "Hey! There is a new version of Superapps available. Please consider refreshing your window.";
 export const TEST_EMAIL_SUCCESS = (email: string) => () =>
   `Test email sent, please check the inbox of ${email}`;
 export const TEST_EMAIL_SUCCESS_TROUBLESHOOT = () => "Troubleshoot";
@@ -1037,7 +1037,7 @@ export const WELCOME_FORM_NON_SUPER_USER_ROLE_DROPDOWN = () =>
   "Tell us more about what you do at work?";
 export const WELCOME_FORM_NON_SUPER_USER_ROLE = () => "Role";
 export const WELCOME_FORM_NON_SUPER_USER_USE_CASE = () =>
-  "What are you planning to use Appsmith for?";
+  "What are you planning to use Superapps for?";
 export const QUERY_CONFIRMATION_MODAL_MESSAGE = () =>
   `Are you sure you want to run `;
 export const ENTITY_EXPLORER_TITLE = () => "NAVIGATION";
@@ -1139,7 +1139,7 @@ export const DESCRIPTION = () =>
 export const BUTTON_TEXT = () => "Start Building";
 // -- Rating --
 export const RATING_TITLE = () =>
-  "Congratulations! You just built your first app in Appsmith.";
+  "Congratulations! You just built your first app in Superapps.";
 export const RATING_DESCRIPTION = () =>
   "You can now invite others to this application.";
 export const RATING_TEXT = () => "Rate your experience";
