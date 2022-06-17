@@ -89,7 +89,7 @@ function LeftPaneBottomSection() {
       )}
       <ProductUpdatesModal />
       <LeftPaneVersionData>
-        <span>Appsmith {appVersion.id}</span>
+        <span>Superapps {appVersion.id}</span>
         {howMuchTimeBefore !== "" && (
           <span>Released {howMuchTimeBefore} ago</span>
         )}

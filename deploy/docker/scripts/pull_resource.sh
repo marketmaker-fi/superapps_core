@@ -17,4 +17,4 @@ fi
 
 echo "Start pull docker-compose.yml"
 cd "$install_dir"
-curl -s https://raw.githubusercontent.com/appsmithorg/appsmith/release/deploy/aws_ami/docker-compose.yml --output docker-compose.yml
+curl -s https://raw.githubusercontent.com/aisuperapps/release/deploy/aws_ami/docker-compose.yml --output docker-compose.yml

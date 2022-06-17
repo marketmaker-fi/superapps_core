@@ -8,7 +8,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/appsmithorg/appsmith.git",
+    "url": "https://github.com/aisuperapps/superapps_core.git",
     "directory": "deploy/docker"
   },
   "dependencies": {
