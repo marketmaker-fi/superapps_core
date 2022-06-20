@@ -15,3 +15,11 @@ cd deploy/docker && docker-compose build
 #run :
 cd deploy/docker && docker-compose up -d
 
+#push to docker.io:
+docker ps 
+docker tag docker_appsmith aisuperapps/superapps:latest
+docker push aisuperapps/superapps:latest   
+
+#Then on the VM curl the docker-compose.yml, edit it to specify the tagert to pull, then run docker up
+curl -L https://bit.ly/32jBNin -o $PWD/docker-compose.yml
+sudo docker-compose up -d
