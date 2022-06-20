@@ -1,0 +1,17 @@
+#build rts：
+cd app/rts && ./build
+
+#build client: 
+cd app/client && yarn install && yarn build
+
+#build server: 
+cd app/server && mvn -B clean compile && ./build.sh -DskipTests
+
+#build docker:
+cd deploy/docker && docker-compose build
+
+#make sure docker-compose.yml file includes platform: linux/amd64 for cloud support
+
+#run :
+cd deploy/docker && docker-compose up -d
+
