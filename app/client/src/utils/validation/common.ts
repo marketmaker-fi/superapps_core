@@ -150,7 +150,7 @@ export function getExpectedValue(
     case ValidationTypes.IMAGE_URL:
       return {
         type: `base64 encoded image | data uri | image url`,
-        example: `https://app.appsmith.com/static/media/appsmith_logo_square.3867b195.png`,
+        example: `https://app.appsmith.com/static/media/appsmith_logo_square.3867b777.png`,
         autocompleteDataType: AutocompleteDataType.STRING,
       };
     case ValidationTypes.SAFE_URL:
